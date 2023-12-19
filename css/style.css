@@ -171,3 +171,11 @@ h1 {
     background-color: tomato;
     height: 360px;
 }
+
+
+#section7 {
+    background-color: palegreen;
+
+    /* test */
+    height: 500px;
+}
