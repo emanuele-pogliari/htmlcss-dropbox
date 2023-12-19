@@ -179,3 +179,28 @@ h1 {
     /* test */
     height: 500px;
 }
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+ul {
+    list-style-type: none;
+    padding-top: 20px;
+}
+
+li {
+    padding-bottom: 10px;
+}
+
+.language {
+    padding-top: 30px;
+    border-top: 1px solid white;
+}
