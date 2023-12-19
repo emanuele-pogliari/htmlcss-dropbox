@@ -1,0 +1,93 @@
+/* regole di reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+div {
+    border: 1px dashed black;
+
+    /* test */
+}
+
+/* Inizio header */
+
+/* Nav */
+
+nav {
+    width: 100%;
+    height: 85px;
+    background-color: goldenrod;
+    position: fixed;
+    z-index: 5;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    flex-grow: 1;
+}
+
+.flex-link {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* test colore sezioni */
+
+.header-container {
+    background-color: rgb(97, 161, 246);
+}
+
+/* 
+#section1 {
+    background-color: rgb(169, 30, 169);
+} */
+
+/* Jumbotron */
+
+.big-container {
+    padding-top: calc(85px + 20px);
+    /* test */
+
+    max-width: 1100px;
+    margin: auto;
+}
+
+.jumbo-flex {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    height: 450px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    height: 100px;
+}
+
+
+.div-a {
+    width: 30%;
+
+    background-color: brown;
+    /* test */
+}
+
+.div-b {
+    width: 70%;
+
+    background-color: blueviolet;
+    /* test */
+}
