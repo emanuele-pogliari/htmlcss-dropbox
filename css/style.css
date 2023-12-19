@@ -166,3 +166,8 @@ h1 {
     width: calc(100% / 2);
     min-height: 276px;
 }
+
+#section6 {
+    background-color: tomato;
+    height: 360px;
+}
