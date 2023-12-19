@@ -204,3 +204,21 @@ li {
     padding-top: 30px;
     border-top: 1px solid white;
 }
+
+.find-partner {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    height: 450px;
+}
+
+.image {
+    width: 60%;
+    background-color: palevioletred;
+}
+
+.partner-text {
+    width: 40%;
+    background-color: navy;
+
+}
