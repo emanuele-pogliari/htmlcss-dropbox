@@ -49,10 +49,10 @@ nav {
     background-color: rgb(97, 161, 246);
 }
 
-/* 
+
 #section1 {
     background-color: rgb(169, 30, 169);
-} */
+}
 
 /* Jumbotron */
 
@@ -60,7 +60,7 @@ nav {
     padding-top: calc(85px + 20px);
     /* test */
 
-    max-width: 1100px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -69,7 +69,6 @@ nav {
     justify-content: center;
     flex-grow: 1;
     height: 450px;
-    padding: 20px;
 }
 
 h1 {
@@ -90,4 +89,79 @@ h1 {
 
     background-color: blueviolet;
     /* test */
+}
+
+.small-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.flex-container div {
+    width: calc(100% / 3 - 20px);
+    background-color: chartreuse;
+}
+
+
+.enterprise-card {
+    width: 100%;
+    height: 300px;
+    background-color: coral;
+}
+
+#section2 {
+    background-color: gray;
+}
+
+.reverse {
+    padding: 50px;
+    flex-direction: row-reverse;
+    height: 500px;
+}
+
+#section3 {
+    background-color: khaki;
+}
+
+.functions {
+    flex-wrap: wrap;
+    gap: 30px 0;
+}
+
+#section4 {
+    background-color: lightseagreen;
+
+    height: 300px;
+}
+
+#section5 {
+    background-color: navajowhite;
+}
+
+
+.d-flex5 {
+    display: flex;
+    flex-grow: 1;
+}
+
+.d-flex5 div {
+    width: calc(100% / 3);
+}
+
+.squares {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.squares div {
+    width: calc(100% / 2);
+    min-height: 276px;
 }
