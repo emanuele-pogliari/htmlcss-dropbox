@@ -7,8 +7,10 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-
 }
+
+
+/* Stilizzazione elementi comuni */
 
 div {
     border: 1px dashed black;
@@ -16,31 +18,60 @@ div {
     /* test */
 }
 
+h1 {
+    font-size: 4em;
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
 /* Inizio header */
 
 /* Nav */
 
 nav {
+    position: fixed;
+
+    padding: 0 20px;
+
     width: 100%;
     height: 85px;
+
     background-color: goldenrod;
-    position: fixed;
+
     z-index: 5;
+
 }
 
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-grow: 1;
+
     height: 100%;
+}
+
+.links-list {
+    display: flex;
+    justify-content: space-between;
     flex-grow: 1;
 }
 
 .flex-link {
-    width: 20%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 0 40px;
+
+    width: 20%;
 }
 
 /* test colore sezioni */
@@ -54,26 +85,53 @@ nav {
     background-color: rgb(169, 30, 169);
 }
 
+#section2 {
+    background-color: gray;
+}
+
+#section3 {
+    background-color: khaki;
+}
+
+#section4 {
+    background-color: lightseagreen;
+
+    height: 300px;
+}
+
+#section5 {
+    background-color: navajowhite;
+}
+
+#section6 {
+    background-color: tomato;
+    height: 360px;
+}
+
+#section7 {
+    background-color: palegreen;
+
+    /* test */
+    height: 500px;
+}
+
+/* FINE test colore sezioni */
+
 /* Jumbotron */
 
 .big-container {
-    padding-top: calc(85px + 20px);
-    /* test */
+    padding-top: 185px;
 
     max-width: 1200px;
     margin: auto;
 }
+
 
 .jumbo-flex {
     display: flex;
     justify-content: center;
     flex-grow: 1;
     height: 450px;
-}
-
-h1 {
-    text-align: center;
-    height: 100px;
 }
 
 
@@ -117,9 +175,7 @@ h1 {
     background-color: coral;
 }
 
-#section2 {
-    background-color: gray;
-}
+
 
 .reverse {
     padding: 50px;
@@ -127,23 +183,11 @@ h1 {
     height: 500px;
 }
 
-#section3 {
-    background-color: khaki;
-}
+
 
 .functions {
     flex-wrap: wrap;
     gap: 30px 0;
-}
-
-#section4 {
-    background-color: lightseagreen;
-
-    height: 300px;
-}
-
-#section5 {
-    background-color: navajowhite;
 }
 
 
@@ -167,18 +211,6 @@ h1 {
     min-height: 276px;
 }
 
-#section6 {
-    background-color: tomato;
-    height: 360px;
-}
-
-
-#section7 {
-    background-color: palegreen;
-
-    /* test */
-    height: 500px;
-}
 
 footer {
     background-color: black;
@@ -191,12 +223,12 @@ footer {
 }
 
 
-ul {
+footer ul {
     list-style-type: none;
     padding-top: 20px;
 }
 
-li {
+footer li {
     padding-bottom: 10px;
 }
 
