@@ -12,12 +12,6 @@ body {
 
 /* Stilizzazione elementi comuni */
 
-div {
-    /* border: 1px dashed black; */
-
-    /* test */
-}
-
 h1 {
     font-size: 4em;
     font-weight: 800;
@@ -35,6 +29,12 @@ header,
 
 ul {
     list-style-type: none;
+}
+
+hr {
+    width: 15%;
+    margin: 40px 0;
+    border-color: #ECECED;
 }
 
 .btn {
@@ -114,7 +114,7 @@ nav {
     justify-content: center;
     flex-grow: 1;
     position: relative;
-    bottom: -50px;
+    bottom: -65px;
 }
 
 
@@ -156,6 +156,10 @@ nav {
     gap: 0 50px;
 }
 
+.row {
+    width: calc(100% / 3 - 50px / 3 * 2);
+}
+
 .flex-container .card {
     width: calc(100% / 3 - 50px / 3 * 2);
 }
@@ -170,6 +174,25 @@ nav {
 
 /* Sezione 2 */
 
+#section2 .image-partner img {
+    width: 100%;
+}
+
+#section2 h4 {
+    font-size: 1.6em;
+}
+
+#section2 p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#section2 .find-partner .partner-text {
+    padding: 40px 30px;
+}
+
+#section2 button {}
+
 /* Sezione 3 */
 
 .find-partner {
@@ -177,8 +200,6 @@ nav {
     justify-content: center;
     flex-grow: 1;
 }
-
-.find-partner {}
 
 .image-partner {
     width: 60%;
@@ -215,26 +236,8 @@ nav {
     padding-bottom: 65px;
 }
 
-#section2 h4 {
-    font-size: 1.6em;
-}
-
-#section2 p {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-#section2 .find-partner .partner-text {
-    padding: 40px 30px;
-}
-
-#section2 button {}
 
 /* Sezione 5 */
-
-#section5 div {
-    border: 1px dashed;
-}
 
 .d-flex5 {
     display: flex;
@@ -242,7 +245,7 @@ nav {
 }
 
 .d-flex5>div {
-    width: calc(100% / 3);
+    width: calc(100vw / 3);
     height: calc(100vw / 3);
 }
 
@@ -271,6 +274,7 @@ nav {
 
 #section5 .squares:nth-of-type(1) div:nth-of-type(1) {
     background-color: #a2d39b;
+    border: 20px solid #bcebb5;
 }
 
 #section5 .squares:nth-of-type(1) div:nth-of-type(2) {
@@ -312,11 +316,7 @@ nav {
     width: 40%;
 }
 
-#section5 hr {
-    width: 15%;
-    margin: 40px 0;
-    border-color: #ECECED;
-}
+
 
 /* Sezione 6 */
 
@@ -387,6 +387,64 @@ footer li {
 
 /* Classi test */
 
-section .image-partner img {
-    width: 100%;
+.column {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    gap: 40px 0;
+}
+
+.user-type {
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.column div strong {
+    padding-bottom: 35px;
+    display: inline-block;
+}
+
+.column div ul li {
+    padding-bottom: 25px;
+}
+
+.column div ul {
+    padding-bottom: 50px;
+}
+
+.padding-column {
+    padding: 0 25px 0;
+}
+
+.business-type {
+    padding-bottom: 55px;
+}
+
+#section1 .fa-solid {
+    padding-right: 5px;
+}
+
+#section1 .flex-container .business-type>div {
+    padding-bottom: 25px;
+}
+
+#section1 .flex-container .business-type div:nth-of-type(1) {
+    font-weight: bold;
+    font-size: 1.7em;
+}
+
+#section1 .flex-container .business-type div:nth-of-type(2) {
+    font-weight: bold;
+}
+
+
+#section1 .flex-container .salient-points .fa-solid {
+    color: blue;
+}
+
+.btn-lg {
+    padding-left: 60px;
+    padding-right: 60px;
 }
