@@ -13,7 +13,7 @@ body {
 /* Stilizzazione elementi comuni */
 
 div {
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
     /* test */
 }
@@ -26,6 +26,11 @@ h1 {
 
 h2 {
     font-size: 32px;
+}
+
+header,
+#section6 {
+    background-color: #b4d0e7;
 }
 
 a {
@@ -42,6 +47,11 @@ ul {
     background-color: #0061ff;
     color: white;
     border: none;
+}
+
+.btn-white {
+    background-color: #ffffff;
+    color: black;
 }
 
 .jumbo-flex .fa-solid {
@@ -91,9 +101,7 @@ nav {
 
 /* test colore sezioni */
 
-header {
-    background-color: #b4d0e7;
-}
+
 
 #section4 {
     height: 300px;
@@ -157,7 +165,7 @@ header {
 .small-container {
     max-width: 1000px;
     margin: auto;
-    padding: 75px 0;
+    padding: 150px 0;
 }
 
 .flex-container {
@@ -209,6 +217,10 @@ header {
 
 /* Sezione 5 */
 
+#section5 div {
+    border: 1px dashed;
+}
+
 .d-flex5 {
     display: flex;
     flex-grow: 1;
@@ -227,6 +239,36 @@ header {
 .squares div {
     width: calc(100% / 2);
     min-height: 276px;
+}
+
+/* Sezione 6 */
+
+#section6 .flex-6 {
+    display: flex;
+    justify-content: space-around;
+    gap: 0 230px
+}
+
+#section6 .flex-6 h3 {
+    font-size: 2em;
+    color: #61082b;
+}
+
+#section6 .flex-6 div {
+    width: 50%;
+}
+
+
+
+/* Sezione faq */
+
+#faq .small-container .questions .single-question {
+    padding: 45px 0;
+    border-bottom: 2px solid;
+}
+
+#faq h2 {
+    padding-bottom: 45px;
 }
 
 /* Fine stilizzazione sezioni */
@@ -275,4 +317,10 @@ section img {
 
 .test {
     text-align: center;
+}
+
+
+
+svg {
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(141deg) brightness(102%) contrast(101%);
 }
