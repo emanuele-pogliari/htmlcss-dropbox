@@ -156,6 +156,8 @@ nav {
 /* Fine stilizzazione Jumbotron */
 
 
+/* Inizio stilizzazione sezioni */
+
 .small-container {
     max-width: 1000px;
     margin: auto;
@@ -183,21 +185,33 @@ nav {
     background-color: coral;
 }
 
+/* Sezione 3 */
 
-
-.reverse {
-    padding: 50px;
-    flex-direction: row-reverse;
-    height: 500px;
+.find-partner {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    height: 450px;
 }
 
 
+.image {
+    width: 60%;
+    background-color: palevioletred;
+}
+
+.partner-text {
+    width: 40%;
+    background-color: navy;
+
+}
 
 .functions {
     flex-wrap: wrap;
     gap: 30px 0;
 }
 
+/* Sezione 5 */
 
 .d-flex5 {
     display: flex;
@@ -219,6 +233,9 @@ nav {
     min-height: 276px;
 }
 
+/* Fine stilizzazione sezioni */
+
+/* Inizio stilizzazione footer */
 
 footer {
     background-color: black;
@@ -245,24 +262,8 @@ footer li {
     border-top: 1px solid white;
 }
 
-.find-partner {
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-    height: 450px;
-}
 
-.image {
-    width: 60%;
-    background-color: palevioletred;
-}
-
-.partner-text {
-    width: 40%;
-    background-color: navy;
-
-}
-
+/* Classi test */
 
 section img {
     width: 200px;
