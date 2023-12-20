@@ -23,6 +23,10 @@ h1 {
     font-weight: 800;
 }
 
+h2 {
+    font-size: 32px;
+}
+
 a {
     text-decoration: none;
 }
@@ -117,7 +121,7 @@ nav {
 
 /* FINE test colore sezioni */
 
-/* Jumbotron */
+/* Stilizzazione Jumbotron */
 
 .big-container {
     padding-top: 185px;
@@ -149,9 +153,13 @@ nav {
     /* test */
 }
 
+/* Fine stilizzazione Jumbotron */
+
+
 .small-container {
     max-width: 1000px;
     margin: auto;
+    padding: 75px 0;
 }
 
 .flex-container {
