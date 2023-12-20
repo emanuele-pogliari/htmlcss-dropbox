@@ -33,11 +33,6 @@ header,
     background-color: #b4d0e7;
 }
 
-a {
-    color: black;
-    text-decoration: none;
-}
-
 ul {
     list-style-type: none;
 }
@@ -99,25 +94,10 @@ nav {
     gap: 0 40px;
 }
 
-/* test colore sezioni */
-
-
-
-#section4 {
-    height: 300px;
+.header-container .flex-link .links-list a {
+    color: black;
+    text-decoration: none;
 }
-
-
-#section6 {
-    height: 360px;
-}
-
-#section7 {
-    /* test */
-    height: 500px;
-}
-
-/* FINE test colore sezioni */
 
 /* Stilizzazione Jumbotron */
 
@@ -214,6 +194,14 @@ nav {
     gap: 30px 0;
 }
 
+
+/* Sezione 4 */
+
+#section4 h2 {
+    padding-bottom: 65px;
+
+}
+
 /* Sezione 5 */
 
 #section5 div {
@@ -284,7 +272,7 @@ nav {
 #section5 .text {
     background-color: #f5f5f5;
 
-    padding: 25px;
+    padding: 0 25px;
 }
 
 
