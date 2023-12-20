@@ -262,3 +262,13 @@ footer li {
     background-color: navy;
 
 }
+
+
+section img {
+    width: 200px;
+    height: 200px;
+}
+
+.test {
+    text-align: center;
+}
