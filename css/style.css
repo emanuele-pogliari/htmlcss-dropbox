@@ -156,7 +156,7 @@ nav {
     gap: 0 50px;
 }
 
-.row {
+.column {
     width: calc(100% / 3 - 50px / 3 * 2);
 }
 
@@ -390,12 +390,12 @@ footer li {
 .column {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    border: 1px solid #d2d2d5;
     gap: 40px 0;
 }
 
 .user-type {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #d2d2d5;
     text-align: center;
     padding: 10px 0;
 }
@@ -419,7 +419,7 @@ footer li {
 }
 
 .business-type {
-    padding-bottom: 55px;
+    margin-bottom: 45px;
 }
 
 #section1 .fa-solid {
@@ -444,7 +444,11 @@ footer li {
     color: blue;
 }
 
-.btn-lg {
-    padding-left: 60px;
-    padding-right: 60px;
+.btn-section1 {
+    width: 100%;
+}
+
+
+#section1 .flex-container button {
+    margin-bottom: 25px;
 }
