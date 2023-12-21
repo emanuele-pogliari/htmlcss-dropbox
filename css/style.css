@@ -12,6 +12,10 @@ body {
 
 /* Stilizzazione elementi comuni */
 
+section .small-container {
+    max-width: 1000px;
+    margin: auto;
+}
 
 
 h2 {
@@ -48,6 +52,11 @@ hr {
 .jumbo-flex .fa-solid {
     margin-top: 40px;
     font-size: 46px;
+}
+
+.padding-y-50 {
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 
 
@@ -105,10 +114,9 @@ h1 {
     font-weight: 800;
 }
 
-header .big-container {
+.big-container {
     padding-top: 120px;
     margin: auto;
-
     max-width: 1200px;
 }
 
@@ -147,11 +155,14 @@ header .big-container .jumbo-flex .img-jumbo img {
 
 /* Inizio stilizzazione sezioni */
 
-.small-container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 150px 0;
+/* Sezione 1 */
+
+
+#section1 .small-container h2 {
+    margin-bottom: 50px;
 }
+
+
 
 .flex-container {
     display: flex;
