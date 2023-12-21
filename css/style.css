@@ -158,10 +158,6 @@ header .big-container .jumbo-flex .img-jumbo img {
 
 /* Sezione 1 */
 
-.radio-buttons {
-    display: flex;
-    gap: 50px;
-}
 
 .column {
     width: calc(100% / 3 - 50px / 3 * 2);
@@ -192,7 +188,7 @@ header .big-container .jumbo-flex .img-jumbo img {
 }
 
 .column .column-list {
-    padding-bottom: 50px;
+    padding-bottom: 5px;
 }
 
 #section1 * .user-type {
@@ -202,16 +198,16 @@ header .big-container .jumbo-flex .img-jumbo img {
 }
 
 #section1 .flex-container .column strong {
-    padding-bottom: 35px;
+    padding-bottom: 25px;
     display: inline-block;
 }
 
 #section1 .column .column-list li {
-    padding-bottom: 25px;
+    padding-bottom: 15px;
 }
 
 #section1 .column .business-type {
-    margin-bottom: 45px;
+    margin-bottom: 35px;
 }
 
 #section1 .flex-container .business-type>div {
@@ -310,7 +306,7 @@ header .big-container .jumbo-flex .img-jumbo img {
 }
 
 #section2 .find-partner .partner-text {
-    padding: 40px 30px;
+    padding: 50px;
 }
 
 /* Sezione 3 */
@@ -436,8 +432,6 @@ header .big-container .jumbo-flex .img-jumbo img {
     width: 40%;
 }
 
-
-
 /* Sezione 6 */
 
 #section6 .flex-6 {
@@ -451,35 +445,46 @@ header .big-container .jumbo-flex .img-jumbo img {
     color: #61082b;
 }
 
-#section6 .flex-6 div {
-    width: 50%;
-}
-
-
-
 /* Sezione faq */
 
-#faq .small-container .questions .single-question {
+#faq .questions .single-question {
     padding: 45px 0;
     border-bottom: 1px solid;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: space-between;
+}
+
+#faq .questions .q-and-a-flex {
     justify-content: space-between;
 }
 
-#faq .small-container .questions .single-question .fa-chevron-down {
+#faq .questions .hide-text {
+    display: none;
+}
+
+#faq .single-question:active .hide-text {
+    padding-top: 20px;
+    display: block;
+}
+
+#faq .q-and-a-flex .fa-chevron-down {
     color: #21211D;
-    align-self: center;
-    margin-right: 20px;
+    transform: rotate(0deg);
+}
+
+#faq .single-questions:active .fa-chevron-down {
+    transform: rotate(180deg);
 }
 
 #faq h2 {
     padding-bottom: 45px;
 }
 
-#faq .small-container .questions .single-question *:first-of-type {
+#faq .questions .single-question *:first-of-type {
     border-top: 1px#F4F4F4;
 }
-
 
 /* Fine stilizzazione sezioni */
 
@@ -516,3 +521,44 @@ footer li {
 .footer-column h4 {
     font-size: 1.5em;
 }
+
+.q-and-a-flex {
+    display: flex;
+    vertical-align: center;
+}
+
+
+/* Animazioni e transistion */
+
+/* nav e header */
+
+.links-list a {
+    padding-bottom: 5px;
+    transition: all 0.2s;
+}
+
+.links-list a:hover {
+    border-bottom: 2px solid #0061ff;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.links-list button {
+    transition: background-color 0.2s;
+}
+
+.links-list button:hover {
+    background-color: #0062ffc0;
+}
+
+/* sezioni */
+
+.small-container button:hover,
+.big-container button:hover {
+    background-color: #0062ffc0;
+}
+
+
+
+
+/* TEST RADIO BUTTON */
