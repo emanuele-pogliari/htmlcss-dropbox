@@ -143,11 +143,11 @@ header .big-container .jumbo-flex {
 
 }
 
-header .big-container .jumbo-flex .img-jumbo {
+header .big-container .img-jumbo {
     width: 70%;
 }
 
-header .big-container .jumbo-flex .img-jumbo img {
+header .big-container .img-jumbo img {
     width: 100%;
 }
 
@@ -206,6 +206,10 @@ header .big-container .jumbo-flex .img-jumbo img {
     padding-bottom: 15px;
 }
 
+#section1 .column-list .fa-check {
+    color: #2D66FF;
+}
+
 #section1 .column .business-type {
     margin-bottom: 35px;
 }
@@ -222,10 +226,6 @@ header .big-container .jumbo-flex .img-jumbo img {
 
 #section1 .flex-container .business-type div:nth-of-type(2) {
     font-weight: bold;
-}
-
-#section1 .flex-container .salient-points .fa-solid {
-    color: #5673FF;
 }
 
 #section1 .column .btn-section1 {
@@ -269,6 +269,7 @@ header .big-container .jumbo-flex .img-jumbo img {
 
 #section1 .small-container h2 {
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 
@@ -282,6 +283,16 @@ header .big-container .jumbo-flex .img-jumbo img {
     border: 1px solid black;
 }
 
+
+#section1 .radio-buttons {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+}
+
+#section1 .features {
+    padding-bottom: 40px;
+}
 
 /* test flex li */
 #section1 li {
@@ -434,21 +445,30 @@ header .big-container .jumbo-flex .img-jumbo img {
 
 /* Sezione 6 */
 
+#section6 .small-container {
+    padding: 140px 0;
+}
+
 #section6 .flex-6 {
     display: flex;
     justify-content: space-around;
-    gap: 0 230px
+    gap: 0 130px
 }
 
 #section6 .flex-6 h3 {
-    font-size: 2em;
+    font-size: 2.5em;
     color: #61082b;
+}
+
+
+#section6 button {
+    padding: 15px 30px;
 }
 
 /* Sezione faq */
 
 #faq .questions .single-question {
-    padding: 45px 0;
+    padding: 35px 0;
     border-bottom: 1px solid;
     display: flex;
     flex-direction: column;
@@ -458,6 +478,7 @@ header .big-container .jumbo-flex .img-jumbo img {
 
 #faq .questions .q-and-a-flex {
     justify-content: space-between;
+    align-items: center;
 }
 
 #faq .questions .hide-text {
@@ -469,12 +490,12 @@ header .big-container .jumbo-flex .img-jumbo img {
     display: block;
 }
 
-#faq .q-and-a-flex .fa-chevron-down {
+#faq .questions .fa-chevron-up {
     color: #21211D;
     transform: rotate(0deg);
 }
 
-#faq .single-questions:active .fa-chevron-down {
+#faq .questions:active .fa-chevron-up {
     transform: rotate(180deg);
 }
 
@@ -482,8 +503,8 @@ header .big-container .jumbo-flex .img-jumbo img {
     padding-bottom: 45px;
 }
 
-#faq .questions .single-question *:first-of-type {
-    border-top: 1px#F4F4F4;
+#faq .questions .single-question .q-and-a-flex:first-child() {
+    border-top: 1px solid #0061ff;
 }
 
 /* Fine stilizzazione sezioni */
@@ -524,7 +545,7 @@ footer li {
 
 .q-and-a-flex {
     display: flex;
-    vertical-align: center;
+
 }
 
 
@@ -533,13 +554,13 @@ footer li {
 /* nav e header */
 
 .links-list a {
-    padding-bottom: 5px;
+    padding-bottom: 30px;
+    transform: scale(1);
     transition: all 0.2s;
 }
 
 .links-list a:hover {
     border-bottom: 2px solid #0061ff;
-    font-size: 1.1em;
     font-weight: 500;
 }
 
@@ -559,6 +580,75 @@ footer li {
 }
 
 
-
-
 /* TEST RADIO BUTTON */
+
+.radio-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    cursor: pointer;
+}
+
+.radio-button input {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.radio-button span {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+    border: 0.5px solid black;
+}
+
+.radio-button input:checked+span:after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.radio-button input:checked+span {
+    background-color: #0e5dde;
+}
+
+.radio-button span:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 50%;
+    background-color: #0e5dde;
+}
+
+.radio-button input:checked+span:before {
+    animation: growAndFade 0.2s ease-out;
+}
+
+@keyframes growAndFade {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(1.5);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(2);
+    }
+}
