@@ -12,11 +12,7 @@ body {
 
 /* Stilizzazione elementi comuni */
 
-h1 {
-    font-size: 4em;
-    font-weight: 800;
-    margin-bottom: 30px;
-}
+
 
 h2 {
     font-size: 32px;
@@ -54,9 +50,8 @@ hr {
     font-size: 46px;
 }
 
-/* Inizio header */
 
-/* Nav */
+/* Stilizzazione Nav */
 
 nav {
     position: fixed;
@@ -79,7 +74,14 @@ nav {
     height: 100%;
 }
 
-.links-list {
+.nav-container .flex-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 40px;
+}
+
+.nav-container .flex-link .links-list {
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
@@ -87,33 +89,37 @@ nav {
     align-items: center;
 }
 
-.flex-link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0 40px;
-}
-
-.header-container .flex-link .links-list a {
+.nav-container .flex-link .links-list a {
     color: black;
     text-decoration: none;
 }
 
+
+/* Inizio header */
+
 /* Stilizzazione Jumbotron */
 
-.big-container {
-    padding-top: 185px;
-    /* sistemare padding */
-    max-width: 1200px;
+
+h1 {
+    font-size: 4em;
+    font-weight: 800;
+}
+
+header .big-container {
+    padding-top: 120px;
     margin: auto;
+
+    max-width: 1200px;
 }
 
 
-.jumbo-flex {
+header .big-container .jumbo-flex {
     display: flex;
     justify-content: center;
     flex-grow: 1;
+
     position: relative;
+
     bottom: -65px;
 }
 
@@ -125,14 +131,14 @@ nav {
     gap: 34px;
 
     width: 30%;
-    /* test */
+
 }
 
-.img-jumbo {
+header .big-container .jumbo-flex .img-jumbo {
     width: 70%;
 }
 
-.img-jumbo img {
+header .big-container .jumbo-flex .img-jumbo img {
     width: 100%;
 }
 
