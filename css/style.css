@@ -47,6 +47,7 @@ hr {
 .btn-white {
     background-color: #ffffff;
     color: black;
+    padding: 15px;
 }
 
 .jumbo-flex .fa-solid {
@@ -157,12 +158,9 @@ header .big-container .jumbo-flex .img-jumbo img {
 
 /* Sezione 1 */
 
-
-#section1 .small-container h2 {
-    margin-bottom: 50px;
+.column {
+    width: calc(100% / 3 - 50px / 3 * 2);
 }
-
-
 
 .flex-container {
     display: flex;
@@ -173,9 +171,108 @@ header .big-container .jumbo-flex .img-jumbo img {
     gap: 0 50px;
 }
 
-.column {
-    width: calc(100% / 3 - 50px / 3 * 2);
+#section1 .padding-column {
+    padding: 25px 25px;
 }
+
+#section1 .fa-solid {
+    padding-right: 5px;
+}
+
+#section1 .flex-container .column {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #d2d2d5;
+    gap: 15px 0;
+}
+
+.column .column-list {
+    padding-bottom: 50px;
+}
+
+#section1 * .user-type {
+    border-bottom: 1px solid #d2d2d5;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#section1 .flex-container .column strong {
+    padding-bottom: 35px;
+    display: inline-block;
+}
+
+#section1 .column .column-list li {
+    padding-bottom: 25px;
+}
+
+#section1 .column .business-type {
+    margin-bottom: 45px;
+}
+
+#section1 .flex-container .business-type>div {
+    padding-bottom: 25px;
+}
+
+#section1 .flex-container .business-type div:nth-of-type(1),
+.enterprise-title {
+    font-weight: bold;
+    font-size: 1.7em;
+}
+
+#section1 .flex-container .business-type div:nth-of-type(2) {
+    font-weight: bold;
+}
+
+#section1 .flex-container .salient-points .fa-solid {
+    color: #5673FF;
+}
+
+#section1 .column .btn-section1 {
+    width: 100%;
+}
+
+
+#section1 .flex-container button {
+    margin-bottom: 25px;
+}
+
+#section1 .enterprise-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-color: #d2d2d5;
+}
+
+#section1 .enterprise-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#section1 .enterprise-flex .title-w-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 20px;
+}
+
+.enterprise-subtitle {
+    padding-bottom: 35px;
+}
+
+.enterprise-description {
+    padding-right: 250px;
+}
+
+
+#section1 .small-container h2 {
+    margin-bottom: 50px;
+}
+
+
+
+
 
 .flex-container .card {
     width: calc(100% / 3 - 50px / 3 * 2);
@@ -206,8 +303,6 @@ header .big-container .jumbo-flex .img-jumbo img {
 #section2 .find-partner .partner-text {
     padding: 40px 30px;
 }
-
-#section2 button {}
 
 /* Sezione 3 */
 
@@ -357,12 +452,27 @@ header .big-container .jumbo-flex .img-jumbo img {
 
 #faq .small-container .questions .single-question {
     padding: 45px 0;
-    border-bottom: 2px solid;
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+#faq .small-container .questions .single-question .fa-chevron-down {
+    color: #21211D;
+    align-self: center;
+    margin-right: 20px;
 }
 
 #faq h2 {
     padding-bottom: 45px;
 }
+
+#faq .small-container .questions .single-question *:first-of-type {
+    border-top: 1px#F4F4F4;
+}
+
+
+
 
 /* Fine stilizzazione sezioni */
 
@@ -398,108 +508,4 @@ footer li {
 
 .footer-column h4 {
     font-size: 1.5em;
-}
-
-
-/* Classi test */
-
-.column {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #d2d2d5;
-    gap: 15px 0;
-}
-
-.user-type {
-    border-bottom: 1px solid #d2d2d5;
-    text-align: center;
-    padding: 10px 0;
-}
-
-
-.column div strong {
-    padding-bottom: 35px;
-    display: inline-block;
-}
-
-.column div ul li {
-    padding-bottom: 25px;
-}
-
-.column div ul {
-    padding-bottom: 50px;
-}
-
-.padding-column {
-    padding: 25px 25px;
-}
-
-.business-type {
-    margin-bottom: 45px;
-}
-
-#section1 .fa-solid {
-    padding-right: 5px;
-}
-
-#section1 .flex-container .business-type>div {
-    padding-bottom: 25px;
-}
-
-#section1 .flex-container .business-type div:nth-of-type(1),
-.test-title {
-    font-weight: bold;
-    font-size: 1.7em;
-}
-
-#section1 .flex-container .business-type div:nth-of-type(2) {
-    font-weight: bold;
-}
-
-
-#section1 .flex-container .salient-points .fa-solid {
-    color: blue;
-}
-
-.btn-section1 {
-    width: 100%;
-}
-
-
-#section1 .flex-container button {
-    margin-bottom: 25px;
-}
-
-/* #section1 .enterprise-card div>div:nth-of-type(1) {
-    font-weight: bold;
-    font-size: 1.7em;
-} */
-
-#section1 .enterprise-card {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    border-color: #d2d2d5;
-}
-
-.enterprise-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-
-.title-w-button {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-bottom: 20px;
-}
-
-.enterprise-subtitle {
-    padding-bottom: 35px;
-}
-
-.enterprise-description {
-    padding-right: 250px;
 }
